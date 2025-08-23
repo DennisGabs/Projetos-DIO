@@ -1,12 +1,14 @@
 import './App.css'
 import { Card } from './components/Card'
+import { Layout } from './components/Layout'
 
 function App() {
   return (
     <>
-      <Card id={1} title="Massa" description="Top demais bicho"/>
-
-      <Card id={2} title="Card do Dennis Lindo" description="Oloko bicho"/>
+      <Layout >
+        <Card id={1} title="Massa" description="Top demais bicho"/>
+        <Card id={2} title="Card do Dennis Lindo" description="Oloko bicho"/>
+      </Layout>
     </>
   )
 }
