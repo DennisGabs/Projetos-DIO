@@ -1,0 +1,12 @@
+.header {
+  background-color: #3a0058;
+  color: white;
+  height: 60px;
+}
+
+.header .title {
+  font-weight: 800;
+  color: antiquewhite;
+  font-size: 24px;
+  margin: 10px 0 10px 0px;
+}
