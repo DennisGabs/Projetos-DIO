@@ -1,15 +1,23 @@
+import { Box } from "@chakra-ui/react"
 import './App.css'
-import { Card } from './components/Card'
-import { Layout } from './components/Layout'
-
 function App() {
   return (
-    <>
-      <Layout >
-        <Card id={1} title="Massa" description="Top demais bicho"/>
-        <Card id={2} title="Card do Dennis Lindo" description="Oloko bicho"/>
-      </Layout>
-    </>
+    <Box>
+      <h1>Faça o login</h1>
+      <label htmlFor="emailInput">
+        Email
+      </label>
+      <input type="email" id="emailInput" />
+
+      <label htmlFor="passwordInput">
+        Senha
+      </label>
+      <input type='password' id="passwordInput" />
+
+      <button>
+        Entrar
+      </button>
+    </Box>
   )
 }
 
