@@ -1,13 +1,14 @@
 import { Button } from '@chakra-ui/react'
+import { MouseEventHandler } from 'react'
 
 interface IMyButton {
   text: string,
-  action: () => void
+  onClick: MouseEventHandler
 }
 
-export const MyButton = ({text, action= () => {}}: IMyButton) => {
+export const MyButton = ({text, onClick}: IMyButton) => {
   return(
-    <Button onClick={action} colorScheme='teal' size='sm' width='100%' marginTop='5px'>
+    <Button onClick={onClick} colorScheme='teal' size='sm' width='100%' marginTop='5px'>
       {text}
     </Button>
   )

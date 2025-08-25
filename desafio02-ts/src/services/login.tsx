@@ -1,3 +1,7 @@
-export const login = (): void => {
-    alert('Seja Bem vindo(a)!')
+interface ILogin {
+  email: string
+}
+
+export const login = ({email}: ILogin): void => {
+  alert(`Seja Bem vindo(a) ${email}!`)
 }
